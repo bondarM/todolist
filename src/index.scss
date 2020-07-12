@@ -1,0 +1,86 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~materialize-css/dist/css/materialize.min.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.todo {
+  margin-bottom: 1rem;
+}
+
+.todo.completed span {
+  text-decoration: line-through;
+}
+
+.todo.completed label {
+  background-color: #308a54;
+}
+
+.todo.completed label:hover {
+  background-color: rgb(43, 146, 86);
+}
+
+.todo label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: space-between;
+  cursor: pointer;
+  background: #dddddd;
+  padding: 1rem;
+
+  color: black;
+}
+
+.anim {
+  transition: 2s ease-in;
+}
+
+.todo i {
+  z-index: 2;
+}
+
+.todo label:hover {
+  background-color: rgb(187, 187, 187);
+}
+.delete__icon:hover {
+  opacity: 0.5;
+}
+
+.bg__theme__dark {
+  background: rgb(27, 26, 26);
+  height: 100vh;
+}
+
+.bg__theme__white {
+  background: rgb(233, 233, 233);
+  height: 100vh;
+}
+
+.them__control {
+  margin: 10px;
+}
+
+.custom-control-label {
+  position: relative;
+
+  vertical-align: top;
+  display: inline;
+  font-size: 18px;
+}
+
+.text__inout {
+  color: wheat;
+}
